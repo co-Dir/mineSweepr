@@ -1,15 +1,39 @@
 
 body{
 text-align: center;
+align-content: center;
+
+background-color: blue
+
+
+}
+button{
+padding:50px
+
+
+}
+
+
+
+.board{
     
+    align-content: center;
+    margin: 15%  auto;
+background-color: aqua;
+padding: 25px ;
+border: 2px solid ;
+/* margin-left: 100px; */ /* Stay in place */
+}
+.board-cell{
+    padding: 25px ;
+    background-color:black;
+    border:1px solid black
+    }
+.board-cell:hover{
+background-color:white;
+
+
+
 }
 
-
-
-
-body .board{
-
-border: 1px solid ;
-
-
-}
+    

@@ -3,6 +3,7 @@
 gCellName = {};
 gElselected = '';
 var empty = '😆'
+var mine = '😜'
 
 gBoard = []
 
@@ -46,6 +47,9 @@ function createBoard() {
         console.log(board, 'matrixca')
 
     }
+    board[2][1] = mine;
+    board[1][1] = mine;
+
     return board;
 
 
@@ -59,10 +63,10 @@ var strHtml = '';
 
 for(var i = 0; i < board.length; i++) {
     var row = board[i];
-    strHtml += '<tr>'
+    strHtml += '<tr class= board >'
     for (var j = 0; j < row.length;j++) {
          var cell = row[j]
-         strHtml+=`<td class= board
+         strHtml+=`<td pop=hey class= board-cell 
          data-i="${i}" data-j="${j}"
          onclick="cellClicked(this,${i},${j})"
          > ${cell} </td>`;
@@ -74,6 +78,21 @@ for(var i = 0; i < board.length; i++) {
     elBoard.innerHTML = strHtml;
 
 }
+
+function startGame() {
+
+
+
+}
+
+
+function cellClicked(){
+
+
+
+
+}
+
 
 
 
